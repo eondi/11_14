@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="SS">
+        <ul>
+            <li>
+                <div class="WIN">  </div>
+            </li>
+            <li>
+                <div class="LINUX">  </div>
+            </li>
+            <li>
+                <div class="MAC">  </div>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+<style>
+    *{ 
+
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        height: 70px;
+        background-color: black;
+    }
+    .SS {
+        display: flex;
+        align-items: center;
+        height: CALC(100vh - 60px);
+        background-color: white;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        list-style-type: none;
+        /* ????? width */
+    }
+    li div{
+        height: 450px;
+        width: 350px;
+        margin: 35px;
+    }
+    .WIN{
+        background-color: blue;
+        
+    }
+    .LINUX{
+
+        background-color: red;
+    }
+    .MAC{
+
+        background-color: green;
+    }
+
+</style>
+</html>

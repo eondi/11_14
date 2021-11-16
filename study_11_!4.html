@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- div는 한 블럭을 먹는다용 -->
+    <div class="header"></div>
+    <div class="nav"> </div>
+    <div class="contents"> 
+        <div class="article"> </div>
+        <div class="aside"> </div>
+    </div>
+    <div class="footer"> </div>
+
+</body>
+<style>
+    /*  * wild-card 전체에 적용을 시키는것 
+        reset작업 브라우저마다 기본설정이 다르기 때문에 작업전에 맞춰 두는것 글자,간격등*/
+    *{
+        /*
+           margin 요소들 사이의 겉부분 간격 내가 아닌것과 간격을 줄떄
+           padding 요소안쪽의 간격 */
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        height: 50px;
+        background-color: blue;
+    }
+    .nav {
+        height: 20px;
+        background-color: yellow;
+    }
+    /* display - 속성을 인위적으로 바꾸는것 
+    contents가 article,aside를 감싸고 있기때문에 
+    contents-부모 / article,aside가 자식이 된다융
+    content
+    */
+    .contents {
+        display: flex;
+        height: 400px;
+    }
+    .article { 
+        width: 70%;
+        height: 500px;
+        background-color: pink;
+    }
+    .aside {
+        width: 30%;
+        height: 500px;
+        background-color:green;
+    }
+    .footer {
+        height: 200px;
+        background-color:brown;
+    }
+</style>
+</html>
